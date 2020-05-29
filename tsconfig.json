@@ -1,0 +1,53 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "emitDecoratorMetadata": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "module": "commonjs",
+    "outDir": "dist",
+    "removeComments": true,
+    "sourceMap": true,
+    "strict": true,
+    "target": "es6",
+    "moduleResolution": "node",
+    "paths": {
+      "@config/*": [
+        "src/config/*"
+      ],
+      "@repository/*": [
+        "src/repository/*"
+      ],
+      "@routes/*": [
+        "src/routes/*"
+      ],
+      "@service/*": [
+        "src/service/*"
+      ],
+      "@entity/*": [
+        "src/entity/*"
+      ],
+      "@shared/*": [
+        "src/shared/*"
+      ],
+      "@server": [
+        "src/Server"
+      ]
+    },
+    "types": [
+      "node",
+      "reflect-metadata"
+    ],
+    "typeRoots": [
+      "node_modules/@types"
+    ]
+  },
+  "include": [
+    "src/**/*.ts",
+    "spec/**/*.ts"
+  ],
+  "exclude": [
+    "src/public/"
+  ]
+}
